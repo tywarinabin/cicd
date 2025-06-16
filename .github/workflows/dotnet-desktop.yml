@@ -45,7 +45,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Publish app
-        run: dotnet publish HelloCI/HelloCI.csproj -c Release -o publish
+        run: dotnet publish HelloWorld/HelloWorld.csproj -c Release -o publish
 
       - name: Deploy (custom command)
         run: |
