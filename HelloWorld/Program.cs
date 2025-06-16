@@ -5,7 +5,7 @@ namespace HelloCI
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Greet("CI/CD"));
+            Console.WriteLine(Greet("CI/CD"))
         }
 
         public static string Greet(string name)
