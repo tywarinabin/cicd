@@ -1,0 +1,56 @@
+name: .NET 8 CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+      - feature/**
+  pull_request:
+    branches:
+      - master
+      - feature/**
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET 8 SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build application
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run unit tests
+        run: dotnet test --no-build --verbosity normal
+
+  deploy:
+    needs: build-test
+    if: github.ref == 'refs/heads/master' && success()
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET 8 SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Publish app
+        run: dotnet publish HelloCI/HelloCI.csproj -c Release -o publish
+
+      - name: Deploy (custom command)
+        run: |
+          echo "Starting deployment..."
+          # Example command: copy to server, run docker, etc.
+          # Below is a sample:
+          cp -r publish/* /tmp/deployment-folder/
+          echo "Deployed to /tmp/deployment-folder"
