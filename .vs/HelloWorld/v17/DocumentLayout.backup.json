@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Visual Studio\\Practice .net program\\HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0786C-BDD6-4B0E-B3A9-231B74597BB5}|HelloCI.Tests\\HelloCI.Tests.csproj|g:\\visual studio\\practice .net program\\helloworld\\helloci.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE0786C-BDD6-4B0E-B3A9-231B74597BB5}|HelloCI.Tests\\HelloCI.Tests.csproj|solutionrelative:helloci.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E1356E3-6227-40F5-8911-1781B2564AEA}|HelloWorld\\HelloWorld.csproj|g:\\visual studio\\practice .net program\\helloworld\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E1356E3-6227-40F5-8911-1781B2564AEA}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "G:\\Visual Studio\\Practice .net program\\HelloWorld\\HelloCI.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "HelloCI.Tests\\UnitTest1.cs",
+              "ToolTip": "G:\\Visual Studio\\Practice .net program\\HelloWorld\\HelloCI.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "HelloCI.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAACAZmZmZmYGwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T21:18:41.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Visual Studio\\Practice .net program\\HelloWorld\\HelloWorld\\Program.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
+              "ToolTip": "G:\\Visual Studio\\Practice .net program\\HelloWorld\\HelloWorld\\Program.cs",
+              "RelativeToolTip": "HelloWorld\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T21:11:53.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
