@@ -47,10 +47,9 @@ jobs:
       - name: Publish app
         run: dotnet publish HelloWorld/HelloWorld.csproj -c Release -o publish
 
-      - name: Deploy (custom command)
+      - name: Mock Deploy (Simulated Deployment)
         run: |
-          echo "Starting deployment..."
-          # Example command: copy to server, run docker, etc.
-          # Below is a sample:
-          cp -r publish/* /tmp/deployment-folder/
-          echo "Deployed to /tmp/deployment-folder"
+          echo "Starting mock deployment..."
+          mkdir -p /tmp/mock-deploy/
+          cp -r publish/* /tmp/mock-deploy/
+          echo "Files copied to /tmp/mock-deploy/ (Mock Deployment Complete)"
